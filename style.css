@@ -1,0 +1,79 @@
+* {
+   box-sizing: border-box;
+}
+
+#menu {
+   background-color: #a9a4a0;
+   position: absolute;
+   width: 20%;
+   top: 50%;
+   margin-top: -150px;
+   left: 40%;
+}
+
+.menuOption {
+   background-color: gray;
+   position: static;
+   margin: 5%;
+   width: 90%;
+   height: 100px;
+   border: 1px solid black;
+}
+
+.mapCell {
+   background-color: white;
+   position: absolute;
+   width: 20px;
+   height: 20px;
+}
+
+#mazeBg {
+   background-color: black;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   border: 1px solid black;
+   display: none;
+}
+
+#player {
+   background-color: green;
+   position: absolute;
+   z-index: 3;
+}
+
+#customiseMaze {
+   display: none;
+}
+
+.customiseInput {
+   position: relative;
+   width: 2em;
+   top: -20px;
+   left: 35%;
+   text-align: center;
+}
+
+.inputLabel {
+   text-align: center;
+   left: 50%;
+   margin: auto auto 20px;
+}
+
+.customiseContainer {
+   width: 49%;
+   display: inline-block;
+}
+
+#gen {
+   position: relative;
+   left: 50%;
+   width: 110px;
+   margin-left: -55px;
+   margin-bottom: 5%;
+}
+
+#instructions {
+   text-align: center;
+   margin-bottom: 3%;
+}

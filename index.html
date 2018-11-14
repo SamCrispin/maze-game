@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maze Game</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<body>
+<div id="background">
+    <div id="menu">
+        <div class="menuOption" id="playGame" onclick="setup(false)">Play Game</div>
+        <div class="menuOption" id="customizeMap" onclick="showCustomOptions()">Customize Maze</div>
+        <div id="customiseMaze">
+            <div id="instructions">Any fields left blank will go back to default values <br> (Press enter or click 'Generate Maze' to continue)</div>
+            <div class="customiseContainer">
+                <div class="inputLabel">Dimensions</div>
+                <input class="customiseInput" maxlength="2" placeholder="X" title="X Size" type="text" id="xSize" autofocus>
+                <input class="customiseInput" maxlength="2" placeholder="Y" title="Y Size" type="text" id="ySize">
+                <div class="inputLabel">Start Position</div>
+                <input class="customiseInput" maxlength="2" placeholder="X" title="Maze Start X" type="text" id="startX">
+                <input class="customiseInput" maxlength="2" placeholder="Y" title="Maze Start Y" type="text" id="startY">
+            </div>
+            <div class="customiseContainer">
+                <div class="inputLabel">Maze Generation Start</div>
+                <input class="customiseInput" maxlength="2" placeholder="X" title="Maze Gen Start X" type="text" id="genStartX">
+                <input class="customiseInput" maxlength="2" placeholder="Y" title="Maze Gen Start Y" type="text" id="genStartY">
+                <div class="inputLabel">End Position</div>
+                <input class="customiseInput" maxlength="2" placeholder="X" title="Maze End X" type="text" id="endX">
+                <input class="customiseInput" maxlength="2" placeholder="Y" title="Maze End Y" type="text" id="endY">
+            </div>
+            <button id="gen" onclick="setup(true)">Generate Maze</button>
+        </div>
+    </div>
+    <div id="mazeBg"></div>
+</div>
+</body>
+</html>
